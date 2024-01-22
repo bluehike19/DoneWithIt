@@ -6,7 +6,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text numberOfLines={1} onPress={handlePress}>Hello bluehike!</Text>
-      <Image  source={require('./assets/icon.png')} />
+      <Image  source={{
+        width: 200,
+        height: 230,
+        uri: "https://picsum.photos/200/300"}} />
       <StatusBar style="auto" />
     </View>
   );
