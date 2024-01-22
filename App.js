@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, Image, View } from 'react-native';
 
 export default function App() {
+  const handlePress = () => console.log("Text pressed")
   return (
     <View style={styles.container}>
-      <Text numberOfLines={1} onPress={() => console.log("handle events")}>Hello bluehike!</Text>
+      <Text numberOfLines={1} onPress={handlePress}>Hello bluehike!</Text>
+      <Image  source={require('./assets/icon.png')} />
       <StatusBar style="auto" />
     </View>
   );
