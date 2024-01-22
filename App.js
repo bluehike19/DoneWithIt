@@ -1,15 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, Image, View } from 'react-native';
+import { StyleSheet, Text, Image, View, Button } from 'react-native';
 
 export default function App() {
   const handlePress = () => console.log("Text pressed")
   return (
     <View style={styles.container}>
       <Text numberOfLines={1} onPress={handlePress}>Hello bluehike!</Text>
-      <Image  source={{
-        width: 200,
-        height: 230,
-        uri: "https://picsum.photos/200/300"}} />
+      <Button title='click me' onPress={() => console.log("button")} />
       <StatusBar style="auto" />
     </View>
   );
